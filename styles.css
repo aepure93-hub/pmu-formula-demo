@@ -292,8 +292,10 @@ h1 em {
 }
 
 .phone img {
+  display: block;
   width: 100%;
   height: auto;
+  max-width: none;
   border-radius: 34px;
 }
 
@@ -316,16 +318,9 @@ h1 em {
   transform: rotate(2.5deg);
 }
 
-.phone-hero img {
-  width: 118%;
-  max-width: none;
-  transform: translate(-7.63%, -92px);
-}
-
+.phone-hero img,
 .phone-catalog img {
-  width: 118%;
-  max-width: none;
-  transform: translate(-7.63%, -92px);
+  transform: none;
 }
 
 .orbit {
