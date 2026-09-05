@@ -1,10 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://pmuloop.com/</loc></url>
-  <url><loc>https://pmuloop.com/founding-pass/</loc></url>
-  <url><loc>https://pmuloop.com/privacy/</loc></url>
-  <url><loc>https://pmuloop.com/terms/</loc></url>
-  <url><loc>https://pmuloop.com/cookies/</loc></url>
-  <url><loc>https://pmuloop.com/support/</loc></url>
-  <url><loc>https://pmuloop.com/account-deletion/</loc></url>
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+>
+  <url>
+    <loc>https://pmuloop.com/</loc>
+    <lastmod>2026-09-05</lastmod>
+    <image:image>
+      <image:loc>https://pmuloop.com/assets/app-home.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://pmuloop.com/assets/app-catalog.png</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://pmuloop.com/founding-pass/</loc>
+    <lastmod>2026-09-04</lastmod>
+  </url>
+  <url>
+    <loc>https://pmuloop.com/privacy/</loc>
+    <lastmod>2026-09-04</lastmod>
+  </url>
+  <url>
+    <loc>https://pmuloop.com/terms/</loc>
+    <lastmod>2026-09-04</lastmod>
+  </url>
+  <url>
+    <loc>https://pmuloop.com/cookies/</loc>
+    <lastmod>2026-09-04</lastmod>
+  </url>
+  <url>
+    <loc>https://pmuloop.com/support/</loc>
+    <lastmod>2026-09-04</lastmod>
+  </url>
+  <url>
+    <loc>https://pmuloop.com/account-deletion/</loc>
+    <lastmod>2026-09-02</lastmod>
+  </url>
 </urlset>
