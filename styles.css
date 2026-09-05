@@ -650,6 +650,121 @@ h2 {
   gap: 20px;
 }
 
+.field-story {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(300px, 0.85fr);
+  align-items: center;
+  gap: 52px;
+  min-height: 520px;
+  margin-top: 34px;
+  padding: 62px 68px;
+  overflow: hidden;
+  border-radius: 30px;
+  color: var(--white);
+  background:
+    radial-gradient(circle at 92% 8%, rgba(242, 111, 98, 0.25), transparent 34%),
+    radial-gradient(circle at 8% 94%, rgba(234, 223, 240, 0.12), transparent 30%),
+    linear-gradient(135deg, #241524, #5d354c);
+  box-shadow: 0 30px 80px rgba(50, 17, 58, 0.2);
+}
+
+.field-story-copy {
+  position: relative;
+  z-index: 2;
+}
+
+.field-story-copy h3 {
+  max-width: 650px;
+  margin-bottom: 24px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2.75rem, 5.2vw, 4.7rem);
+  font-weight: 500;
+  line-height: 0.98;
+  letter-spacing: -0.055em;
+}
+
+.field-story-copy > p:not(.eyebrow) {
+  max-width: 630px;
+  margin-bottom: 16px;
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 1.02rem;
+  line-height: 1.7;
+}
+
+.field-story-copy .field-story-note {
+  color: rgba(255, 255, 255, 0.64);
+}
+
+.field-story-link {
+  margin-top: 12px;
+}
+
+.field-story-visual {
+  position: relative;
+  display: grid;
+  min-height: 390px;
+  place-items: center;
+}
+
+.field-story-orb {
+  position: absolute;
+  width: 360px;
+  height: 360px;
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  border-radius: 50%;
+  box-shadow: 0 0 0 56px rgba(255, 255, 255, 0.025);
+}
+
+.field-phone {
+  width: 205px;
+  transform: rotate(2deg);
+  box-shadow: 0 32px 70px rgba(10, 4, 12, 0.42);
+}
+
+.field-story-badge {
+  position: absolute;
+  z-index: 5;
+  right: -8px;
+  bottom: 32px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 15px 12px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 18px;
+  background: rgba(28, 15, 27, 0.72);
+  box-shadow: 0 18px 38px rgba(0, 0, 0, 0.24);
+  backdrop-filter: blur(14px);
+}
+
+.field-story-badge > span {
+  display: grid;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  color: var(--plum);
+  background: #f7c9bf;
+  font-size: 0.76rem;
+  font-weight: 900;
+  place-items: center;
+}
+
+.field-story-badge strong,
+.field-story-badge small {
+  display: block;
+}
+
+.field-story-badge strong {
+  margin-bottom: 3px;
+  font-size: 0.84rem;
+}
+
+.field-story-badge small {
+  color: rgba(255, 255, 255, 0.62);
+  font-size: 0.7rem;
+}
+
 .feature-card {
   position: relative;
   min-height: 360px;
@@ -1410,6 +1525,20 @@ footer p {
     grid-template-columns: 1fr;
   }
 
+  .field-story {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    padding: 52px;
+  }
+
+  .field-story-visual {
+    min-height: 430px;
+  }
+
+  .field-story-badge {
+    right: calc(50% - 190px);
+  }
+
   .planned-heading {
     grid-template-columns: 1fr;
     gap: 26px;
@@ -1565,6 +1694,38 @@ footer p {
   .feature-card {
     padding: 26px;
     border-radius: 24px;
+  }
+
+  .field-story {
+    min-height: 0;
+    padding: 34px 24px 28px;
+    border-radius: 24px;
+  }
+
+  .field-story-copy h3 {
+    font-size: 2.65rem;
+  }
+
+  .field-story-copy > p:not(.eyebrow) {
+    font-size: 0.96rem;
+  }
+
+  .field-story-visual {
+    min-height: 400px;
+  }
+
+  .field-phone {
+    width: 188px;
+  }
+
+  .field-story-orb {
+    width: 300px;
+    height: 300px;
+  }
+
+  .field-story-badge {
+    right: 0;
+    bottom: 22px;
   }
 
   .planned-grid,
