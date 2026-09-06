@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "publishedAt": "2026-09-06T13:12:37Z",
+  "publishedAt": "2026-09-06T14:27:54Z",
   "android": {
     "minimumBuild": 13,
-    "latestBuild": 13,
-    "latestVersion": "0.4.0"
+    "latestBuild": 16,
+    "latestVersion": "0.6.0"
   },
   "ios": {
     "minimumBuild": 10,
-    "latestBuild": 14,
-    "latestVersion": "0.5.0"
+    "latestBuild": 15,
+    "latestVersion": "0.6.0"
   }
 }
