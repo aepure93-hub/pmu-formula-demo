@@ -20,3 +20,12 @@ if ('IntersectionObserver' in window) {
 
 const year = document.querySelector('#year');
 if (year) year.textContent = String(new Date().getFullYear());
+
+const campaign = new URLSearchParams(window.location.search).get('utm_campaign');
+if (campaign === 'studio_origin') {
+  document.querySelectorAll('[data-track="app-store"]').forEach((link) => {
+    const url = new URL(link.href);
+    url.searchParams.set('itsct', 'studio_origin');
+    link.href = url.toString();
+  });
+}

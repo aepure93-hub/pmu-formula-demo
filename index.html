@@ -38,12 +38,40 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "WebSite",
-        "name": "PMULoop",
-        "url": "https://pmuloop.com/",
-        "image": "https://pmuloop.com/assets/pmuloop-social-preview.png",
-        "description": "Workspace operativo per professionisti PMU, sviluppato a partire dalle esigenze quotidiane del lavoro in studio.",
-        "inLanguage": "it-IT"
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://pmuloop.com/#website",
+            "name": "PMULoop",
+            "url": "https://pmuloop.com/",
+            "image": "https://pmuloop.com/assets/pmuloop-social-preview.png",
+            "description": "Workspace operativo per professionisti PMU, sviluppato a partire dalle esigenze quotidiane del lavoro in studio.",
+            "inLanguage": "it-IT"
+          },
+          {
+            "@type": "SoftwareApplication",
+            "@id": "https://pmuloop.com/#app",
+            "name": "PMULoop",
+            "url": "https://pmuloop.com/",
+            "downloadUrl": "https://apps.apple.com/it/app/pmuloop/id6805815193",
+            "applicationCategory": "BusinessApplication",
+            "operatingSystem": "iOS, iPadOS",
+            "description": "App per professionisti PMU che collega schede cliente, agenda, trattamenti, formule, pigmenti, fotografie e documenti.",
+            "image": "https://pmuloop.com/assets/pmuloop-social-preview.png",
+            "inLanguage": "it-IT",
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "EUR",
+              "description": "Preordine gratuito e prova iniziale di 30 giorni; gli abbonamenti opzionali sono mostrati dallo Store."
+            },
+            "contributor": {
+              "@type": "Person",
+              "name": "Paola Benchea",
+              "url": "https://www.pmuroma.it/chi-e-paola-benchea"
+            }
+          }
+        ]
       }
     </script>
   </head>
@@ -62,6 +90,7 @@
           <a href="#schermate">Schermate</a>
           <a href="#ipad">iPad</a>
           <a href="#catalogo">Catalogo</a>
+          <a href="#risorse">Guide</a>
           <a class="nav-cta" href="#disponibilita">Disponibilità</a>
         </nav>
       </div>
@@ -73,20 +102,20 @@
         <div class="hero-glow hero-glow-two" aria-hidden="true"></div>
         <div class="container hero-grid">
           <div class="hero-copy reveal">
-            <p class="eyebrow"><span></span> In arrivo su iPhone, iPad e Android</p>
+            <p class="eyebrow"><span></span> Preordine aperto su App Store</p>
             <h1>Ogni cliente.<br>Ogni trattamento.<br><em>Tutto collegato.</em></h1>
             <p class="hero-lead">
               PMULoop tiene unito l'intero lavoro PMU: schede cliente, agenda,
-              trattamenti, formule, pigmenti, foto, documenti e firme. La prima
-              versione è in arrivo su App Store, con dati protetti sul dispositivo.
+              trattamenti, formule, pigmenti, foto, documenti e firme. Puoi
+              preordinarla gratuitamente su App Store prima del lancio del 1 novembre.
             </p>
             <div class="hero-actions">
-              <a class="button button-primary" href="#funzioni">
-                Scopri l'anteprima
+              <a class="button button-primary" data-track="app-store" href="https://apps.apple.com/it/app/pmuloop/id6805815193?itscg=30200&amp;itsct=pmuloop_website" rel="noopener">
+                Preordina gratis su App Store
                 <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6" /></svg>
               </a>
-              <a class="button button-ghost" href="#catalogo">Esplora il catalogo</a>
-              <a class="button button-ghost" href="#disponibilita">Scopri i piani</a>
+              <a class="button button-ghost" href="#funzioni">Scopri le funzioni</a>
+              <a class="button button-ghost" href="#risorse">Leggi le guide</a>
             </div>
             <ul class="promise-list" aria-label="Caratteristiche commerciali">
               <li>
@@ -117,7 +146,7 @@
               <div class="phone-speaker" aria-hidden="true"></div>
               <img
                 src="assets/app-home.png"
-                alt="Dashboard operativa della beta PMULoop"
+                alt="Dashboard operativa dell'app PMULoop"
                 width="1080"
                 height="2400"
                 decoding="async"
@@ -189,7 +218,7 @@
                 Un confronto continuo trasforma problemi reali dello studio in strumenti più
                 semplici, ordinati e utili nel lavoro.
               </p>
-              <a class="button button-light field-story-link" href="https://www.pmuroma.it/" target="_blank" rel="noopener noreferrer">
+              <a class="button button-light field-story-link" href="https://www.pmuroma.it/?utm_source=pmuloop.com&amp;utm_medium=referral&amp;utm_campaign=studio_origin" target="_blank" rel="noopener noreferrer">
                 Scopri PMU Roma
                 <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6" /></svg>
               </a>
@@ -299,7 +328,7 @@
             <p class="eyebrow"><span></span> Dentro PMULoop 1.0</p>
             <h2>Il lavoro quotidiano, finalmente nello stesso posto.</h2>
             <p>
-              Le schermate arrivano dalla beta corrente e usano esclusivamente
+              Le schermate arrivano dall'app corrente e usano esclusivamente
               contenuti di esempio: mostrano il flusso reale senza esporre dati di clienti.
             </p>
           </div>
@@ -309,7 +338,7 @@
               <div class="screen-phone">
                 <img
                   src="assets/app-clienti.png"
-                  alt="Elenco clienti nella beta PMULoop"
+                  alt="Elenco clienti nell'app PMULoop"
                   width="1080"
                   height="2400"
                   loading="lazy"
@@ -323,7 +352,7 @@
               <div class="screen-phone">
                 <img
                   src="assets/app-agenda.png"
-                  alt="Agenda appuntamenti nella beta PMULoop"
+                  alt="Agenda appuntamenti nell'app PMULoop"
                   width="1080"
                   height="2400"
                   loading="lazy"
@@ -337,7 +366,7 @@
               <div class="screen-phone">
                 <img
                   src="assets/app-formulario.png"
-                  alt="Formulario delle miscele nella beta PMULoop"
+                  alt="Formulario delle miscele nell'app PMULoop"
                   width="1080"
                   height="2400"
                   loading="lazy"
@@ -457,6 +486,38 @@
         </div>
       </section>
 
+      <section class="section resources-section" id="risorse">
+        <div class="container">
+          <div class="section-heading centered reveal">
+            <p class="eyebrow"><span></span> Guide per professioniste PMU</p>
+            <h2>Organizzare il lavoro, prima ancora di aprire l'app.</h2>
+            <p>Procedure pratiche nate dai problemi ricorrenti dello studio: niente formule magiche, solo criteri chiari da adattare al proprio metodo.</p>
+          </div>
+          <div class="resources-grid">
+            <article class="resource-card reveal">
+              <span>01</span><h3>Scheda cliente PMU</h3>
+              <p>Come tenere insieme informazioni pertinenti, consensi, fotografie e cronologia senza moltiplicare gli archivi.</p>
+              <a href="/guide/scheda-cliente-pmu/">Leggi la guida</a>
+            </article>
+            <article class="resource-card reveal reveal-delay-short">
+              <span>02</span><h3>Pigmenti e lotti</h3>
+              <p>Un metodo operativo per collegare prodotto, lotto, formula e trattamento senza affidarsi alla memoria.</p>
+              <a href="/guide/pigmenti-lotti-tracciabilita/">Leggi la guida</a>
+            </article>
+            <article class="resource-card reveal reveal-delay">
+              <span>03</span><h3>Agenda PMU</h3>
+              <p>Appuntamenti, ritocchi e scadenze: come costruire una sequenza che resti leggibile anche mesi dopo.</p>
+              <a href="/guide/agenda-pmu-ritocchi-scadenze/">Leggi la guida</a>
+            </article>
+            <article class="resource-card reveal reveal-delay-long">
+              <span>04</span><h3>Come nasce PMULoop</h3>
+              <p>Dal confronto con Paola Benchea a Roma a un workspace pensato per il lavoro quotidiano delle professioniste PMU.</p>
+              <a href="/storia/come-nasce-pmuloop/">Leggi la storia</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
       <section class="section launch" id="disponibilita">
         <div class="container launch-shell reveal">
           <div class="launch-art" aria-hidden="true">
@@ -467,12 +528,12 @@
           </div>
           <div class="launch-copy">
             <p class="eyebrow light"><span></span> PMULoop</p>
-            <h2>In arrivo su App Store.</h2>
+            <h2>Preordina PMULoop gratuitamente.</h2>
             <p>
-              Prova tutte le funzioni per 30 giorni. Al termine puoi scegliere il
-              piano mensile o annuale mostrato dallo Store, con ripristino tramite account.
+              Il preordine non comporta addebiti. Dopo il lancio puoi provare tutte
+              le funzioni per 30 giorni e scegliere, solo se vuoi continuare, il piano mostrato dallo Store.
             </p>
-            <a class="button button-light" href="support/">Assistenza PMULoop</a>
+            <a class="button button-light" data-track="app-store" href="https://apps.apple.com/it/app/pmuloop/id6805815193?itscg=30200&amp;itsct=pmuloop_website" rel="noopener">Apri la pagina App Store</a>
             <div class="store-row" role="group" aria-label="Piattaforme previste">
               <span>
                 <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.8 12.7c0-2.7 2.2-4 2.3-4.1a5 5 0 0 0-3.9-2.1c-1.7-.2-3.2 1-4 1-.8 0-2.1-1-3.5-1-1.8 0-3.5 1.1-4.5 2.7-1.9 3.3-.5 8.2 1.4 10.9.9 1.3 2 2.8 3.5 2.7 1.4-.1 1.9-.9 3.6-.9 1.7 0 2.2.9 3.7.9 1.5 0 2.5-1.3 3.4-2.7 1-1.5 1.5-3 1.5-3.1-.1 0-3.5-1.3-3.5-5.3ZM14.1 4.8c.8-1 1.4-2.4 1.2-3.8-1.2.1-2.7.8-3.6 1.8-.8.9-1.5 2.3-1.3 3.7 1.4.1 2.8-.7 3.7-1.7Z" /></svg>
@@ -504,7 +565,7 @@
           <span>PMULoop</span>
         </a>
         <div class="footer-meta">
-          <p>© <span id="year">2026</span> PMULoop · Pre-lancio</p>
+          <p>© <span id="year">2026</span> PMULoop</p>
           <nav class="legal-links" aria-label="Informazioni legali">
             <a href="privacy/">Privacy</a>
             <a href="terms/">Termini</a>
